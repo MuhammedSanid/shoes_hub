@@ -1,0 +1,20 @@
+{% extends 'blank_layout.html' %}
+
+
+{% block content %}
+
+
+{% if messages  %}
+    {% for message in messages %}
+
+       <p style="color:red;">{{message}}</p>
+        
+    {% endfor %}
+    
+ {% else %}
+
+{% include 'cart_container.html' %}
+
+{% endif %}
+
+{% endblock content %}
